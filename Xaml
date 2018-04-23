@@ -1,0 +1,16 @@
+<Window x:Class="U3_IanMarkhamHangman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U3_IanMarkhamHangman"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas>
+        <Label x:Name="lbltitle" Content="Welcome to Hangman" FontSize="18" Canvas.Left="170" Canvas.Top="10"/>
+        <Button x:Name="btnreset" Content="Reset Game" Click="btnreset_Click" Canvas.Left="10" Canvas.Top="53" Width="100"/>
+        <TextBox x:Name="txtinput" Text="Guess a Letter" Canvas.Left="10" Canvas.Top="102" Width="121" Height="20"/>
+
+        <Label x:Name="lblguessed" Content=" Letters you have Guessed" Canvas.Left="10" Canvas.Top="193" Height="103" Width="152"/>
+    </Canvas>
+</Window>
