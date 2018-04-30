@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:U3_IanMarkhamHangman"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-	<StackPanel x:Name="Window">
+	<StackPanel x:Name="Window" Background="#FFF4FF00">
+		<StackPanel.Effect>
+			<DropShadowEffect Color="#FF0056FF" BlurRadius="20" ShadowDepth="4"/>
+		</StackPanel.Effect>
 
 		<Grid x:Name="pg_Title"
 
@@ -14,18 +17,18 @@
 
 			<Label x:Name="lbl_Title"
                    Content="Welcome to Hangman" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   FontFamily="Arial" FontSize="24" />
+                   FontFamily="Showcard Gothic" FontSize="24" Background="Red" />
 
 			<Button x:Name="btn_Play" Margin="0,37,0,-37"
 					Content="Play!"
 					FontSize="20"
-                    Click="click_Play"/>
+                    Click="click_Play" FontFamily="Showcard Gothic" Background="#FF0056FF"/>
 
-			<TextBox x:Name="inpt_Letters" Text="Select your difficulty here (Ex: 4.) (Min 3, Max 5.)" Margin="0,123,0,-123"/>
+			<TextBox x:Name="inpt_Letters" Text="Select your difficulty here (Ex: 4.) (Min 3, Max 4.)" Margin="0,123,0,-123" Background="#FF00F1FF" FontFamily="Segoe UI Black" FontSize="14"/>
 
 			<Button x:Name="btn_SetLetters"
                     Content="Set Amount of Letters by clicking here" Margin="0,160,0,-160"
-                    Click="click_SetLetters"/>
+                    Click="click_SetLetters" Background="#FF0056FF" FontSize="14" FontFamily="Showcard Gothic"/>
 		</Grid>
 
 		<Grid x:Name="pg_Play"
